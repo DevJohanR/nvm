@@ -1,15 +1,12 @@
-import React from 'react';
-
 type BadgeProps = {
   text: string;
-  color: 'red' | 'green' | 'blue'; // Puedes añadir más colores según necesites
+  color: 'red' | 'green' | 'blue' | 'purple'; // Agregamos 'purple' aquí
   fontWeight: 'normal' | 'bold';
 };
 
 const Badge: React.FC<BadgeProps> = ({ text, color, fontWeight }) => {
-  // Definimos los estilos de fondo y texto usando un switch
   let bgColorClass = '';
-  const textColorClass = 'text-white'; // Por defecto el texto será blanco
+  const textColorClass = 'text-white';
 
   switch (color) {
     case 'red':
@@ -21,11 +18,13 @@ const Badge: React.FC<BadgeProps> = ({ text, color, fontWeight }) => {
     case 'blue':
       bgColorClass = 'bg-blue-500';
       break;
+    case 'purple':
+      bgColorClass = 'bg-purple-500'; // Definimos la clase de color para purple
+      break;
     default:
       bgColorClass = 'bg-gray-500';
   }
 
-  // Definir el peso de la fuente
   const fontWeightClass = fontWeight === 'bold' ? 'font-bold' : 'font-normal';
 
   return (
