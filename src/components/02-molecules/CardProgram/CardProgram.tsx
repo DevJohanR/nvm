@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image'; // Importamos el componente Image de Next.js
-import Badge from '@/components/atoms/bagde/Badge';
-import PlusIcon from '@/components/atoms/icons/plusIcon/PlusIcon';
-import ArrowRightIcon from '@/components/atoms/icons/ArrowRightIcon/ArrowRightIcon';
-import CalendarIcon from '@/components/atoms/icons/CalendarIcon/CalendarIcon';
+import Badge from '@/components/01-atoms/bagde/Badge';
+import PlusIcon from '@/components/01-atoms/icons/plusIcon/PlusIcon';
+import ArrowRightIcon from '@/components/01-atoms/icons/ArrowRightIcon/ArrowRightIcon';
+import CalendarIcon from '@/components/01-atoms/icons/CalendarIcon/CalendarIcon';
 
 type CardProgramProps = {
     title?: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Badge from '@/components/atoms/bagde/Badge';
+import Badge from '@/components/01-atoms/bagde/Badge';
 
 const CardCourse: React.FC = () => {
   return (
